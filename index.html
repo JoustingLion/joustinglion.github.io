@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Is there Focus next week?</title>
+  <link rel="stylesheet" href="fw/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <style>
+    #YN {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 5em;
+      color: white;
+    }
+    #center {
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      top: 30%;
+      left: 50%;
+      margin: -150px 0 0 -160px;
+      text-align: center;
+    }
+    body {
+      background-image: url("resources/yes.jpg");
+      background-size: cover;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="center">
+    <p id="YN" class="animated fadeInDownBig">Maybe</p>
+  </div>
+</body>
+
+<script>
+  var date = new Date();
+
+  <!-- March 11 and March 4  -->
+
+  if (date.getTime() < 1521973800000 && date.getTime() > 1520139600000) {
+    document.getElementById("YN").innerHTML = "Yes";
+    if(window.innerHeight > window.innerWidth) {
+      document.body.style.backgroundImage = "url('resources/yes2.jpg')";
+    }
+  } else if (date.getTime() < 1522578600000 && date.getTime() > 1521973800000) {
+    document.getElementById("YN").innerHTML = "No";
+    document.body.style.backgroundImage = "url('resources/no2.jpg')"
+    if(window.innerHeigh > window.innerWidth) {
+      document.body.style.backgroundImage = "url('resources/no.jpg')"
+    }
+  } else if (date.getTime() < 1523788200000 && date.getTime() > 1522578600000) {
+    document.getElementById("YN").innerHTML = "Yes";
+    if(window.innerHeight > window.innerWidth) {
+      document.body.style.backgroundImage = "url('resources/yes2.jpg')"
+    }
+    } else if (date.getTime() < 1524393000000 && date.getTime() > 1523788200000) {
+      document.getElementById("YN").innerHTML = "No";
+      document.body.style.backgroundImage = "url('resources/no2.jpg')"
+      if(window.innerHeigh > window.innerWidth) {
+        document.body.style.backgroundImage = "url('resources/no.jpg')"
+    }
+  }
+</script>
+</html>
