@@ -23,7 +23,7 @@
       text-align: center;
     }
     body {
-      background-image: url("resources/IMG9517281.jpg");
+      background-image: url("resources/no2.jpg");
       background-size: cover;
     }
   </style>
@@ -32,41 +32,7 @@
 
 <body>
   <div id="center">
-    <p id="YN" class="animated fadeInDownBig">Yes</p>
+    <p id="YN" class="animated fadeInDownBig">No</p>
   </div>
-</body>
-
-<script>
-  var date = new Date();
-
-  
-  if (date.getTime() < 1523827800000) {
-    document.getElementById("YN").innerHTML = "Yes";
-    if(window.innerHeight > window.innerWidth) {
-      document.body.style.backgroundImage = "url('resources/yes2.jpg')";
-    }
-  } else if (date.getTime() < 1525037400000 && date.getTime() > 1523827800000) {
-    document.getElementById("YN").innerHTML = "No";
-    document.body.style.backgroundImage = "url('resources/no2.jpg')";
-    if(window.innerHeight > window.innerWidth) {
-      document.body.style.backgroundImage = "url('resources/no.jpg')";
-    }
-  } else if (date.getTime() < 1525642200000 && date.getTime() > 1525037400000) {
-    document.getElementById("YN").innerHTML = "Yes";
-    if (window.innerHeight > window.innerWidth) {
-      document.body.style.backgroundImage = "url('yes2.jpg')"
-    }
-  } else if (date.getTime() < 1526247000000 && date.getTime() > 1525642200000) {
-    document.getElementById("YN").innerHTML = "No";
-    document.body.style.backgroundImage = "url('resources/no2.jpg')";
-    if(window.innerHeight > window.innerWidth) {
-      document.body.style.backgroundImage = "url('resources/no.jpg')";
-    }
-  } else if (date.getTime() < 1528666200000 && date.getTime() > 1526851800000) {
-    document.getElementById("YN").innerHTML = "Yes";
-    if (window.innerHeight > window.innerWidth) {
-      document.body.style.backgroundImage = "url('yes2.jpg')"
-    }
-  } // le why
-</script>
+  </body>
 </html>
