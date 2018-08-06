@@ -23,7 +23,7 @@
       text-align: center;
     }
     body {
-      background-image: url("resources/no2.jpg");
+      background-image: url("resources/yes1.jpg");
       background-size: cover;
     }
   </style>
@@ -32,16 +32,12 @@
 
 <body>
   <div id="center">
-    <p id="YN" class="animated fadeInDownBig">No</p>
+    <p id="YN" class="animated fadeInDownBig">Yes</p>
   </div>
   
   <script>
     date = new Date();
-    // Greater than August 5, less than August 26
-    if (date.getTime() > 1533515400000 && date.getTime < 1535329800000) {
-      document.getElementById("YN").innerHTML = "Yes";
-      document.body.style.backgroundImage = "url('resources/yes1.jpg')";
-    }
+    
   </script>
   </body>
 </html>
